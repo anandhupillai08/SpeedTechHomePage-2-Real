@@ -1,0 +1,124 @@
+/* ============================================
+   SPEEDTECH.AI NAVIGATION BAR
+   ============================================= */
+
+.navbar {
+    background-color: #ffffff; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0.5rem 0;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+}
+.nav-item {}
+.nav-link {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.2s ease;
+}
+.nav-link:hover {
+    color: #0099ff;
+    background-color: rgba(0,153,255,0.1);
+    transform: translateY(-1px);
+}
+
+/* Dropdown Arrow Rotation */
+.navbar .dropdown-toggle::after {
+    content: '';
+    display: inline-block;
+    margin-left: 6px;
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+.navbar .dropdown.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    min-width: 220px;
+    padding: 0.75rem 0;
+    border-radius: 8px;
+}
+.dropdown-item {
+    color: #000000 !important;
+    font-weight: 500;
+    padding: 0.55rem 1rem;
+    transition: all 0.2s ease;
+}
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(0,153,255,0.1);
+    color: #0099ff !important;
+}
+.dropdown-item small {
+    color: #666666 !important;
+}
+.dropdown-item:hover small,
+.dropdown-item:focus small {
+    color: #0099ff !important;
+}
+
+/* Mobile Menu Toggler */
+.navbar-toggler {
+    border-color: rgba(0,0,0,0.15);
+    padding: 0.5rem 0.75rem;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,153,255,0.25);
+    outline: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/* ============================================
+   NAVBAR BUTTON OVERRIDE - SPEEDTECH.AI
+   ============================================= */
+
+/* Blue buttons in navbar */
+.navbar .btn.btn-blue {
+    background-color: #0d6efd !important; /* Primary blue */
+    color: #ffffff !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    padding: 0.65rem 1.75rem !important;
+    font-weight: 500 !important;
+    font-size: 0.92rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar .btn.btn-blue:hover {
+    background-color: #0b5ed7 !important; /* Slightly darker on hover */
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}

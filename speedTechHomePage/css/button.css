@@ -1,0 +1,52 @@
+/* ============================================
+   SPEEDTECH.AI BUTTONS
+   ============================================= */
+.d-flex.gap-3 { gap: 1rem; }
+
+.btn {
+    padding: 0.65rem 1.75rem;
+    font-weight: 500;
+    font-size: 0.92rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Original Gradient Buttons */
+.btn-outline-light,
+.btn-primary-custom,
+.btn-gradient {
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,212,255,0.25);
+}
+.btn-outline-light:hover,
+.btn-primary-custom:hover,
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #00bbff 0%, #0088ee 100%);
+    box-shadow: 0 6px 20px rgba(0,212,255,0.4);
+    transform: translateY(-2px);
+}
+.btn-outline-light:active,
+.btn-primary-custom:active,
+.btn-gradient:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0,212,255,0.35);
+}
+
+/* button.css */
+.btn.btn-blue {
+    background-color: #0d6efd !important; /* Bootstrap primary blue */
+    color: #ffffff !important;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.btn.btn-blue:hover {
+    background-color: #0b5ed7 !important; /* Slightly darker blue */
+    color: #ffffff !important;
+}
+
+
